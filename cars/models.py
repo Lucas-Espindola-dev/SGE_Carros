@@ -22,7 +22,7 @@ class Car(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['name']
+        ordering = ['model']
 
     def __str__(self):
         return f'f {self.model} - {self.color} - {self.model_year} '
